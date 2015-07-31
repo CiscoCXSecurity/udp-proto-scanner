@@ -1,0 +1,4 @@
+Copy udp-proto-scanner.pl and udp-proto-scanner.conf to the same
+directory in your path, e.g:
+
+# cp udp-proto-scanner.pl udp-proto-scanner.conf /usr/local/bin/
