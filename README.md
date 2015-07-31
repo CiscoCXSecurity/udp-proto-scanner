@@ -1,6 +1,4 @@
-
-UDP Protocol Scanner
---------------------
+# UDP Protocol Scanner
 
 udp-proto-scanner.pl scans by sending UDP probes (from udp-proto-scanner.conf)
 to a list of targets:
@@ -12,8 +10,7 @@ The probe names (for -p) are defined in udp-proto-scanner.conf.  List probe
 names using the -l option:
 $ udp-proto-scanner.pl -l
 
-What's it used for?
--------------------
+## What's it used for?
 
 It's used in the host-discovery and service-discovery phases of a pentest.
 It can be helpful if you need to discover hosts that only offer UDP services
@@ -33,21 +30,18 @@ discovered, e.g.:
 * DB2
 * SNMPv3
 
-It's not a portscanner
-----------------------
+## It's not a portscanner
 
 It won't give you a list of open and closed ports for each host.  It's simply
 looking for specific UDP services.
 
-Efficiency
-----------
+## Efficiency
 
 It's most efficient to run udp-proto-scanner.pl against whole networks (e.g.
 256 IPs or more).  If you run it against small numbers of hosts it will seem
 quite slow because it waits for 1 second between each different type of probe.
 
-Credits
--------
+## Credits
 
 The UDP probes are mainly taken from amap, nmap and ike-scan.
 Inspiration for the scanning code was drawn from ike-scan.
