@@ -1,5 +1,7 @@
 # UDP Protocol Scanner
 
+Also see: https://labs.portcullis.co.uk/tools/udp-proto-scanner/
+
 udp-proto-scanner.pl scans by sending UDP probes (from udp-proto-scanner.conf)
 to a list of targets:
 
