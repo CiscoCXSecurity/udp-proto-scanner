@@ -32,7 +32,7 @@ use Getopt::Long;
 use Data::Dumper;
 use File::Basename;
 
-my $VERSION = "1.0";
+my $VERSION = "1.1";
 my $bandwidth = "250k";
 my $config_file = dirname($0) . "/udp-proto-scanner.conf";
 my $max_probes = 3;
@@ -354,6 +354,7 @@ sub read_next_host {
 		my $ip = <$fh>;
 		if (defined($ip)) {
 			chomp $ip;
+			$ip =~ s/[\r\n]//g;
 			if ($self->{resolve_names}) {
 				return _gethostbyname_ascii($ip);
 			} else {
