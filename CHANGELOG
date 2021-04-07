@@ -1,0 +1,11 @@
+
+2008-11-25 udp-proto-scanner v1.0
+
+* Target list can be provided on command line as an IP list or a list of 
+  networks in CIDR notation
+* Config file will be search from in /etc/ as well as the script directory
+  
+
+2008-10-29 udp-proto-scanner v0.9
+
+* Initial release
